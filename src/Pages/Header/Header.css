@@ -1,0 +1,40 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  img {
+    flex: 15%;
+  }
+  
+  .navList a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navList a:hover {
+    color: red;
+  }
+  
+  .navList {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex: 85%;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .headerContainer {
+      flex-direction: column;
+    }
+  
+    .navList {
+      flex-direction: column;
+    }
+  
+    .navList a {
+      margin-top: 10px;
+    }
+  }
+  
